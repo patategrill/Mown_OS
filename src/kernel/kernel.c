@@ -10,7 +10,10 @@ void kernel_main() {
 
         for (int i = 0; i <= len; i += 2){
             video_memory[i] = msg_bienvenue[len];
-            video_memory[i] = 0x8;
+        }
+
+        for (int j = 1; j <=len; j += 2){
+            video_memory[j] = 0x8;
         }
     }
 }
