@@ -1,4 +1,5 @@
 void kernel_main();
+void keyboard();
 
 int main() {
     kernel_main();
@@ -31,4 +32,8 @@ void kernel_main() {
     for (int j = 1; j <= 16; j += 2){
         video_memory[j] = 0x7;
     }
+}
+
+void keyboard(){
+    
 }
