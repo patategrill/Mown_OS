@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+void kernel_main();
+
+int main() {
+    kernel_main();
+}
+
 void kernel_main() {
     char* video_memory = (char*) 0xb8000;
 
