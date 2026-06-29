@@ -1,11 +1,11 @@
-void kernel_main();
+void kernel();
 void keyboard();
 
 int main() {
     kernel_main();
 }
 
-void kernel_main() {
+void kernel() {
     char* video_memory = (char*) 0xb8000;
 
     char msg_bienvenue[] = "Welcome on MownOS!\n";
