@@ -9,4 +9,4 @@ dd 0
 dd -(0x1BADB002)
 
 start:
-    call kernel_main
+    call kernel
