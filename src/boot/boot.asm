@@ -10,3 +10,4 @@ dd -(0x1BADB002)
 
 start:
     call kernel
+    call keyboard
