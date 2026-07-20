@@ -1,13 +1,22 @@
 bits 32
-org 0x7C00
 
 section .multiboot
 align 4
 
 dd 0x1BADB002
 dd 0
-dd -(0x1BADB002)
+dd -(0x1BADB002) 
+
+section .text
+global start
+extern kernel
 
 start:
+    mov esp, stack_top
     call kernel
-    call keyboard
+    cli
+    jmp .hang
+
+.hang:
+    hlt
+    jmp .hang
