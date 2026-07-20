@@ -1,5 +1,5 @@
 void kernel();
-void keyboard();
+/*void keyboard();*/
 
 int main() {
     kernel_main();
@@ -34,6 +34,8 @@ void kernel() {
     }
 }
 
+/*
 void keyboard(){
-    
+    char scancode_table[101] = {0};
 }
+*/
