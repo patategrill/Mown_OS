@@ -2,7 +2,7 @@ void kernel();
 /*void keyboard();*/
 
 int main() {
-    kernel_main();
+    kernel();
 }
 
 void kernel() {
