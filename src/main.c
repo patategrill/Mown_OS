@@ -1,5 +1,4 @@
 void kernel();
-/*void keyboard();*/
 
 int main() {
     kernel();
@@ -33,9 +32,3 @@ void kernel() {
         video_memory[j] = 0x7;
     }
 }
-
-/*
-void keyboard(){
-    char scancode_table[101] = {0};
-}
-*/
