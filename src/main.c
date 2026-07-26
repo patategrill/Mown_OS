@@ -19,12 +19,12 @@ void kernel() {
     char tty[] = "MownOS >";
     indice = 0;
 
-    for (int i = 0; i <= 16; i += 2){
+    for (int i = 40; i <= 56; i += 2){
         video_memory[i] = tty[indice];
         indice = indice + 1;
     }
 
-    for (int j = 1; j <= 16; j += 2){
+    for (int j = 40; j <= 56; j += 2){
         video_memory[j] = 0x7;
     }
 }
