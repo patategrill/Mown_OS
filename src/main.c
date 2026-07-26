@@ -1,9 +1,5 @@
 void kernel();
 
-int main() {
-    kernel();
-}
-
 void kernel() {
     char* video_memory = (char*) 0xb8000;
 
